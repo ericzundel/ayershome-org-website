@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }}{% endblock %}
+
+{% block content %}
+<div class="posts">
+    {% for article in articles_page.object_list %}
+    <article class="post">
+        <header>
+            <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+            <div class="meta">
+                <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                {% if article.category %}
+                <span class="category">in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
+                {% endif %}
+            </div>
+        </header>
+        <div class="summary">
+            {{ article.summary }}
+        </div>
+        <footer>
+            <a href="{{ SITEURL }}/{{ article.url }}" class="read-more">Read more →</a>
+        </footer>
+    </article>
+    {% endfor %}
+</div>
+
+{% if articles_page.has_other_pages() %}
+<nav class="pagination">
+    {% if articles_page.has_previous() %}
+    <a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="prev">← Newer</a>
+    {% endif %}
+    <span class="page-number">Page {{ articles_page.number }} of {{ articles_paginator.num_pages }}</span>
+    {% if articles_page.has_next() %}
+    <a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="next">Older →</a>
+    {% endif %}
+</nav>
+{% endif %}
+{% endblock %}

@@ -1,3 +1,4 @@
+output/
 # Local .terraform directory (contains providers and modules)
 .terraform/
 
