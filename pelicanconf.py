@@ -65,3 +65,7 @@ MARKDOWN = {
     },
     'output_format': 'html5',
 }
+
+# Plugins
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['car_navigation']

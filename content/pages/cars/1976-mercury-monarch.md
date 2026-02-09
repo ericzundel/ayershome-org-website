@@ -1,5 +1,5 @@
 Title: 1976 Mercury Monarch
-Slug: cars/mercury-monarch
+Slug: cars/1976-mercury-monarch
 
 ![1976 Mercury Monarch](/images/1976-mercury-monarch.jpg)
 

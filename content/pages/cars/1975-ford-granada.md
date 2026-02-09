@@ -1,5 +1,5 @@
 Title: 1975 Ford Granada
-Slug: cars/ford-granada
+Slug: cars/1975-ford-granada
 
 ![1975 Ford Granada](/images/1975-ford-granada.jpeg)
 

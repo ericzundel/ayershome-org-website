@@ -1,5 +1,5 @@
 Title: 1987 Mercury Sable Wagon
-Slug: cars/mercury-sable
+Slug: cars/1987-mercury-sable
 
 ![1987 Mercury Sable Wagon](/images/1987-mercury-sable.jpg)
 

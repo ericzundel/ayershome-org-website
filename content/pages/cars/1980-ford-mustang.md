@@ -1,5 +1,5 @@
 Title: 1980 Ford Mustang
-Slug: cars/ford-mustang
+Slug: cars/1980-ford-mustang
 
 ![1980 Ford Mustang](/images/1980-ford-mustang.jpeg)
 
