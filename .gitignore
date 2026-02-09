@@ -1,0 +1,86 @@
+# Local .terraform directory (contains providers and modules)
+.terraform/
+
+# Hide plan files as they may contain sensitive data in plain text
+*.tfplan
+
+# Ignore all terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore variable files that contain secrets (the .tfvars files)
+# You should keep a 'terraform.tfvars.example' (unignored) instead
+*.tfvars
+*.tfvars.json
+
+# Ignore local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# --- GCP Specifics ---
+
+# Ignore GCP Service Account JSON keys
+#*.json
+
+# If you have a specific naming convention for keys, use that instead:
+*credentials.json
+ *-key.json
+
+# Ignore gcloud configuration/logs if run locally in the repo
+.gcloud/
+
+# --- Python ---
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Type checkers
+.mypy_cache/
+.pytype/
+.pyright/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Linting
+.ruff_cache/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
